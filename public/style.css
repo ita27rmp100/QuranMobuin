@@ -1,0 +1,109 @@
+/* general settings */
+*{
+    position:relative;
+    font-family:system-ui;
+    outline:0px;
+}
+/* design of page */
+body{
+    background:rgb(245,245,245);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+nav{
+    background:white;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    top:25px;
+    width:270px;
+    border-radius:18px;
+    box-shadow:0px 0px 5px 0px #fe9a2e;
+    padding:5px;
+    height:475px;
+}
+/* first section of card */
+.title{
+    background:#fe9a2e;
+    color:white;
+    border-radius:18px 18px 0px 0px;
+    top:-5px;
+    width:103.9%;
+    left:-5px;
+    height:65px;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-evenly;
+    align-items:center
+}
+img.mushaf{
+    filter: invert(1);
+    width: 50px;
+}
+/* first section */
+.Voiceplayer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+    padding:5px;
+}
+.QuranIcon{
+    border-radius:100%;
+    width:200px;
+    height:200px;
+    filter:blur(0.5px);
+}
+/* second section */
+form#s {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+input[type='submit'] {
+    background: #fe9a2e;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+}
+input[type='submit']:hover{
+    padding:6px;
+}
+input[type='submit']:active{
+    box-shadow: 0px 0px 10px 0px #fe9a2e;
+}
+/* sections of choosing */
+section {
+    display: grid;
+    grid-template-columns: 33% auto;
+    justify-content: space-between;
+}
+select {
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+    direction: rtl;
+    border: 0px;
+    font-size: 15px;
+    box-shadow: 0px 0px 7px -2px grey;
+    border-right: 3px solid orange;
+    border-radius: 5px;
+}
+option {
+    color:#fe9a2e
+}
+/* audio desgin */
+audio{
+    width:100px
+}
+audio::-webkit-media-controls-panel {
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+}
+audio::-webkit-media-controls-current-time-display ,audio::-webkit-media-controls-timeline, audio::-webkit-media-controls-mute-button{
+    display: none;
+}
